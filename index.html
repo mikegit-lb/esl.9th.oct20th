@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speak Up! — Grade 9 English Speaking Questions · MEB Curriculum</title>
+<meta name="description" content="100 conversation questions for Turkish 9th grade English, organised by the 10 MEB curriculum themes. Speaking practice for students and teachers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6efe2;
+    --card:#fffdf5;
+    --ink:#26211a;
+    --ink-soft:#6f6353;
+    --terra:#bf3b2b;
+    --terra-deep:#93281b;
+    --teal:#155e63;
+    --gold:#d99a2b;
+    --olive:#5a6a2f;
+    --line:#26211a;
+    --shadow:6px 6px 0 var(--line);
+    --shadow-sm:4px 4px 0 var(--line);
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Karla',sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+    background-image:radial-gradient(rgba(38,33,26,.05) 1px, transparent 1px);
+    background-size:22px 22px;
+  }
+  ::selection{background:var(--gold);color:var(--ink)}
+
+  /* kilim zigzag band */
+  .kilim{
+    height:22px;width:100%;
+    background:
+      linear-gradient(135deg,var(--terra) 25%,transparent 25%) 0 0/28px 22px,
+      linear-gradient(225deg,var(--terra) 25%,transparent 25%) 0 0/28px 22px,
+      linear-gradient(315deg,var(--terra) 25%,transparent 25%) 0 0/28px 22px,
+      linear-gradient(45deg,var(--terra) 25%,transparent 25%) 0 0/28px 22px;
+    background-color:transparent;
+    position:relative;z-index:1;
+  }
+  .kilim.k2{filter:hue-rotate(0deg) saturate(.9)}
+  .kilim.teal{filter:invert(1) hue-rotate(140deg) saturate(1.4) brightness(.35)}
+
+  header.site{
+    padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,5vw,4rem) 2.2rem;
+    max-width:1200px;margin:0 auto;
+    position:relative;z-index:1;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teal);border:1.5px solid var(--teal);
+    padding:.35rem .85rem;border-radius:999px;background:rgba(21,94,99,.06);
+  }
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--terra);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.6)}}
+  h1.brand{
+    font-family:'Fraunces',serif;font-weight:900;
+    font-size:clamp(3rem,9vw,6.5rem);
+    line-height:.95;letter-spacing:-.02em;
+    margin:1.1rem 0 .4rem;
+  }
+  h1.brand em{font-style:italic;font-weight:600;color:var(--terra)}
+  .sub{
+    font-size:clamp(1rem,2vw,1.25rem);color:var(--ink-soft);max-width:56ch;
+  }
+  .sub strong{color:var(--ink)}
+  .hero-stats{display:flex;gap:.7rem;margin-top:1.6rem;flex-wrap:wrap}
+  .stat{
+    font-family:'Space Mono',monospace;font-size:.78rem;
+    border:1.5px solid var(--line);border-radius:999px;
+    padding:.45rem .95rem;background:var(--card);box-shadow:3px 3px 0 var(--line);
+  }
+  .stat b{color:var(--terra)}
+
+  .toolbar{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb,var(--paper) 88%, white);
+    backdrop-filter:blur(8px);
+    border-top:1.5px solid var(--line);border-bottom:1.5px solid var(--line);
+    padding:.7rem clamp(1rem,5vw,4rem);
+    display:flex;flex-direction:column;gap:.55rem;
+  }
+  .toolbar-row{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;max-width:1200px;margin:0 auto;width:100%}
+  .chips{display:flex;gap:.45rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;flex:1}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{
+    font-family:'Space Mono',monospace;font-size:.75rem;
+    border:1.5px solid var(--line);border-radius:999px;
+    padding:.42rem .8rem;background:var(--card);cursor:pointer;white-space:nowrap;
+    transition:transform .12s ease, background .12s ease, color .12s ease;
+  }
+  .chip:hover{transform:translateY(-2px)}
+  .chip.active{background:var(--ink);color:var(--paper)}
+  .chip .n{color:var(--terra);font-weight:700}
+  .chip.active .n{color:var(--gold)}
+  .search{
+    font-family:'Karla',sans-serif;font-size:.9rem;
+    border:1.5px solid var(--line);border-radius:999px;
+    padding:.5rem 1rem .5rem 2.2rem;background:var(--card);
+    min-width:210px;box-shadow:3px 3px 0 var(--line);
+  }
+  .search:focus{outline:2px solid var(--terra);outline-offset:1px}
+  .search-wrap{position:relative}
+  .search-wrap::before{content:"⌕";position:absolute;left:.75rem;top:50%;transform:translateY(-50%);font-size:1rem;color:var(--ink-soft)}
+  .rollbtn{
+    font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.05em;
+    background:var(--terra);color:#fff;border:1.5px solid var(--line);border-radius:999px;
+    padding:.55rem 1.1rem;cursor:pointer;box-shadow:3px 3px 0 var(--line);
+    transition:transform .12s ease, background .12s ease;white-space:nowrap;
+  }
+  .rollbtn:hover{transform:translateY(-2px) rotate(-1deg);background:var(--terra-deep)}
+  .rollbtn:active{transform:translateY(1px);box-shadow:1px 1px 0 var(--line)}
+
+  main{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,5vw,4rem) 4rem;position:relative;z-index:1}
+  .count{
+    font-family:'Space Mono',monospace;font-size:.75rem;color:var(--ink-soft);
+    margin:2rem 0 .5rem;text-align:right;
+  }
+
+  .unit{margin-top:3.4rem;scroll-margin-top:130px}
+  .unit-head{display:flex;align-items:baseline;gap:1.1rem;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:.7rem;margin-bottom:1.4rem}
+  .unit-num{
+    font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.6rem,6vw,4.2rem);line-height:1;
+    color:transparent;-webkit-text-stroke:2px var(--ink);
+  }
+  .unit h2{
+    font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.05;letter-spacing:-.01em;
+  }
+  .unit .tr{font-family:'Fraunces',serif;font-style:italic;color:var(--teal);font-size:clamp(.95rem,1.7vw,1.15rem)}
+  .unit-tag{
+    margin-left:auto;font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--terra);border:1.5px solid var(--terra);border-radius:999px;padding:.3rem .8rem;background:rgba(191,59,43,.05);
+  }
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(430px,100%),1fr));gap:1rem}
+  .qcard{
+    background:var(--card);border:2px solid var(--line);border-radius:var(--radius);
+    padding:1.15rem 1.25rem 1rem;box-shadow:var(--shadow-sm);
+    display:flex;flex-direction:column;gap:.7rem;position:relative;
+    opacity:0;transform:translateY(14px);
+    animation:rise .5s cubic-bezier(.2,.7,.3,1) forwards;
+    animation-delay:var(--d,0s);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+  .qcard:hover{transform:translate(1px,-3px);box-shadow:7px 8px 0 var(--line)}
+  .qcard .q{
+    font-family:'Fraunces',serif;font-weight:600;font-size:1.12rem;line-height:1.35;letter-spacing:-.005em;
+  }
+  .qfoot{display:flex;align-items:center;gap:.55rem;margin-top:auto}
+  .tag{
+    font-family:'Space Mono',monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+    border-radius:999px;padding:.28rem .7rem;border:1.5px solid var(--line);
+  }
+  .tag.warm{background:#fdeadf;color:var(--terra-deep);border-color:var(--terra)}
+  .tag.core{background:#e3eeee;color:var(--teal);border-color:var(--teal)}
+  .tag.stretch{background:#fbf0d8;color:#8a5c00;border-color:var(--gold)}
+  .mini{
+    margin-left:auto;font-family:'Space Mono',monospace;font-size:.7rem;
+    background:none;border:1.5px solid var(--line);border-radius:999px;
+    padding:.3rem .65rem;cursor:pointer;color:var(--ink-soft);background:transparent;
+    transition:background .12s ease;
+  }
+  .mini:hover{background:var(--ink);color:var(--paper)}
+  .timer{
+    font-family:'Space Mono',monospace;font-size:.74rem;font-weight:700;
+    color:var(--paper);background:var(--teal);border-radius:999px;padding:.3rem .7rem;
+    display:none;
+  }
+  .timer.going{display:inline-flex;gap:.35rem;align-items:center;color:#fff}
+
+  /* random overlay */
+  .overlay{
+    position:fixed;inset:0;z-index:100;display:none;
+    align-items:center;justify-content:center;padding:1.5rem;
+    background:rgba(38,33,26,.55);backdrop-filter:blur(5px);
+  }
+  .overlay.open{display:flex;animation:fadein .2s ease}
+  @keyframes fadein{from{opacity:0}to{opacity:1}}
+  .draw{
+    background:var(--card);border:2px solid var(--line);border-radius:22px;
+    box-shadow:10px 10px 0 var(--terra);
+    max-width:640px;width:100%;padding:2.4rem 2.2rem 2rem;
+    animation:pop .35s cubic-bezier(.2,1.4,.4,1);text-align:center;
+    max-height:88vh;overflow:auto;
+  }
+  @keyframes pop{from{transform:scale(.85) rotate(-2deg);opacity:0}to{transform:none;opacity:1}}
+  .draw .unitref{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+  .draw .bigq{
+    font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.5rem,4.4vw,2.4rem);
+    line-height:1.15;margin:.9rem 0 1.3rem;letter-spacing:-.01em;
+  }
+  .draw .actions{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap}
+  .btn{
+    font-family:'Space Mono',monospace;font-size:.8rem;font-weight:700;
+    border:2px solid var(--line);border-radius:999px;padding:.6rem 1.2rem;cursor:pointer;
+    background:var(--ink);color:var(--paper);box-shadow:3px 3px 0 var(--terra);
+    transition:transform .12s ease;
+  }
+  .btn.ghost{background:var(--card);color:var(--ink);box-shadow:3px 3px 0 var(--line)}
+  .btn:hover{transform:translateY(-2px)}
+
+  .section-block{margin-top:4.5rem;border:2px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+  .section-block h3{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.3rem,3vw,1.8rem);padding:1.6rem 1.8rem .2rem}
+  .section-block .lede{color:var(--ink-soft);padding:0 1.8rem;font-size:.95rem;max-width:60ch}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;padding:1.4rem 1.8rem 1.8rem}
+  .col h4{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.6rem}
+  .col p{font-size:.92rem;color:#3d362d;margin-bottom:.5rem}
+  .phrases{padding:1.4rem 1.8rem 1.8rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:.6rem}
+  .phrase{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:.98rem;
+    border:1.5px dashed var(--line);border-radius:10px;padding:.6rem .9rem;background:var(--paper);
+    display:flex;gap:.6rem;align-items:baseline;
+  }
+  .phrase .k{font-family:'Space Mono',monospace;font-style:normal;font-weight:700;font-size:.7rem;color:var(--terra)}
+
+  footer.site{
+    border-top:2px solid var(--line);margin-top:5rem;padding:2.2rem clamp(1rem,5vw,4rem);
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center;
+    font-family:'Space Mono',monospace;font-size:.72rem;color:var(--ink-soft);
+    background:var(--card);position:relative;z-index:1;
+  }
+  footer.site .zig{position:absolute;top:-22px;left:0;right:0}
+
+  .toast{
+    position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:var(--paper);font-family:'Space Mono',monospace;font-size:.75rem;
+    padding:.6rem 1.1rem;border-radius:999px;opacity:0;pointer-events:none;z-index:200;
+    transition:opacity .25s ease, transform .25s ease;
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  .empty{padding:3rem;text-align:center;color:var(--ink-soft);font-family:'Fraunces',serif;font-style:italic;font-size:1.2rem}
+
+  @media (max-width:640px){
+    .unit-num{font-size:2rem;-webkit-text-stroke:1.5px var(--ink)}
+    .unit-tag{margin-left:0}
+    .qcard .q{font-size:1.02rem}
+  }
+  @media print{
+    body::before,.toolbar,.rollbtn,.search-wrap,.mini,.timer,.hero-stats,.eyebrow{display:none!important}
+    .qcard{opacity:1!important;transform:none!important;animation:none!important;box-shadow:none}
+    .overlay{display:none!important}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .qcard{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="kilim" aria-hidden="true"></div>
+
+<header class="site">
+  <span class="eyebrow"><span class="dot"></span>MEB 9th Grade English · Speaking Bank</span>
+  <h1 class="brand">Speak <em>Up!</em></h1>
+  <p class="sub"><strong>50 conversation questions</strong> organised by the ten official MEB Grade&nbsp;9 English themes — from <em>Studying Abroad</em> to <em>TV & Social Media</em>. Warm‑up questions for shy students, stretch questions for fluent talkers, and a timer for one‑minute responses.</p>
+  <div class="hero-stats">
+    <span class="stat"><b>10</b>&nbsp;themes</span>
+    <span class="stat"><b>50</b>&nbsp;questions</span>
+    <span class="stat">3&nbsp;difficulty&nbsp;levels</span>
+    <span class="stat">45s&nbsp;response&nbsp;timer</span>
+    <span class="stat">printable</span>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Themes and filters">
+  <div class="toolbar-row">
+    <div class="chips" id="chips"></div>
+    <div class="search-wrap">
+      <input type="search" id="search" class="search" placeholder="Search questions…" autocomplete="off">
+    </div>
+    <button class="rollbtn" id="rollbtn">🎲 Random question</button>
+  </div>
+</nav>
+
+<main>
+  <div class="count" id="count"></div>
+  <div id="units"></div>
+
+  <section class="section-block">
+    <h3>Survival phrases for the speaking exam</h3>
+    <p class="lede">Improvise with confidence — these fillers and connectors buy you thinking time and make short answers sound longer.</p>
+    <div class="phrases">
+      <div class="phrase"><span class="k">01</span>Let me think for a moment…</div>
+      <div class="phrase"><span class="k">02</span>That's an interesting question.</div>
+      <div class="phrase"><span class="k">03</span>Well, it depends, because…</div>
+      <div class="phrase"><span class="k">04</span>For example, in my family…</div>
+      <div class="phrase"><span class="k">05</span>I'd say the main reason is…</div>
+      <div class="phrase"><span class="k">06</span>On the other hand, though…</div>
+      <div class="phrase"><span class="k">07</span>What I mean is…</div>
+      <div class="phrase"><span class="k">08</span>It's hard to choose, but…</div>
+      <div class="phrase"><span class="k">09</span>Personally, I prefer…</div>
+      <div class="phrase"><span class="k">10</span>Could you repeat that, please?</div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h3>Tips: speak for a full minute</h3>
+    <div class="cols">
+      <div class="col">
+        <h4>Don't memorise</h4>
+        <p>Examiners can spot a memorised script immediately. Learn phrases, not sentences — then adapt them to the moment.</p>
+        <p>Answer first (“Yes, I do”), then give <b>one reason</b>, then <b>one example</b>.</p>
+      </div>
+      <div class="col">
+        <h4>Half-minute shape</h4>
+        <p>· → <b>Answer</b> (3–5 words)<br>
+           · → <b>Because…</b> (your reason)<br>
+           · → <b>For example…</b> (a true story!)</p>
+        <p>That tiny structure fills 45 seconds without sounding rehearsed.</p>
+      </div>
+      <div class="col">
+        <h4>Buy thinking time</h4>
+        <p>“Let me think…”, “Well, it depends…”, “I've never thought about it, but…”</p>
+        <p>Silence hurts; thinking out loud doesn't. It's normal and natural speech.</p>
+      </div>
+      <div class="col">
+        <h4>Mistakes are fine</h4>
+        <p>Keep going. A fluent answer with one small mistake scores higher than a perfect, two‑word answer.</p>
+        <p>Slow down, don't stop.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="zig kilim"></div>
+  <span> Speak Up! · Grade 9 English speaking question bank</span>
+  <span>Mapped to the MEB 2024‑25 curriculum · Themes 1–10 · Built for practice, not memorisation</span>
+</footer>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Random question">
+  <div class="draw">
+    <div class="unitref" id="drawUnit">THEME · QUESTION</div>
+    <p class="bigq" id="drawQ"></p>
+    <div class="actions">
+      <button class="btn" id="rollAgain">🎲 Another one</button>
+      <button class="btn ghost" id="rollClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const THEMES = [
+  { id:1, title:"Studying Abroad", tr:"Yurtdışında Eğitim", qs:[
+    ["Do you want to study abroad one day? Why or why not?","warm"],
+    ["Which country would you like to study in? What attracts you there?","core"],
+    ["What are the advantages and disadvantages of studying abroad?","core"],
+    ["How is a typical school day in Turkey different from schools abroad?","core"],
+
+    ["How can exchange students make friends quickly?","stretch"],
+  ]},
+  { id:2, title:"My Environment", tr:"Benim Çevrem", qs:[
+    ["Describe your neighbourhood. What do you like most about it?","warm"],
+    ["What can you see from your window right now?","warm"],
+    ["Do you live in a city, a town, or a village? What are the differences?","core"],
+    ["What is your favourite place in your neighbourhood, and what do you do there?","core"],
+
+    ["How does the weather change daily life in your hometown through the seasons?","stretch"],
+  ]},
+  { id:3, title:"Movies", tr:"Filmler", qs:[
+    ["What kind of films do you enjoy most? Why?","warm"],
+    ["Do you prefer watching films at home or at the cinema? Why?","warm"],
+    ["Which Turkish film would you recommend to a foreign friend, and why?","core"],
+    ["Describe the plot of a film you liked recently, in three sentences.","core"],
+
+    ["If someone made a film about your life, what would the title be?","stretch"],
+  ]},
+  { id:4, title:"Human in Nature", tr:"Doğada İnsan", qs:[
+    ["How much time do you spend outside every week?","warm"],
+    ["What do you like to do to relax in nature?","warm"],
+    ["Which season do you enjoy most outdoors, and why?","core"],
+    ["Why is spending time in nature good for our health?","core"],
+
+    ["Do you think young people spend enough time outdoors these days? Why or why not?","stretch"],
+  ]},
+  { id:5, title:"Inspirational People", tr:"İlham Verici İnsanlar", qs:[
+    ["Who inspires you most in your family, and why?","warm"],
+    ["Which famous person do you really admire? What have they achieved?","core"],
+    ["What qualities make a person inspirational?","core"],
+    ["Tell us about a teacher, coach, or friend who has influenced you.","core"],
+
+    ["What is the best piece of advice you have ever received?","stretch"],
+  ]},
+  { id:6, title:"Bridging Cultures", tr:"Kültürler Köprüsü", qs:[
+    ["How would you introduce Turkish culture to a visitor? What would you say first?","warm"],
+    ["Which traditions are important in your family?","core"],
+    ["How do people greet each other in Turkish culture, and how is it different in other cultures?","core"],
+    ["If a foreign friend came for dinner, what would you cook or offer them? Why?","core"],
+
+    ["What do you think you would find hard to get used to if you lived abroad?","stretch"],
+  ]},
+  { id:7, title:"World Heritage", tr:"Dünya Mirası", qs:[
+    ["Which historical places have you visited in Turkey? What did you see there?","warm"],
+    ["Why should we protect historical places?","warm"],
+    ["Tell us about a historical site in your city or region.","core"],
+    ["Which world heritage site would you most like to visit, and why?","core"],
+
+    ["Does tourism help or harm cultural sites? Can you give an example?","stretch"],
+  ]},
+  { id:8, title:"Emergency & Health Problems", tr:"Acil Durum ve Sağlık Sorunları", qs:[
+    ["What do you do first in an emergency, before calling for help?","warm"],
+    ["What number do you call for an ambulance in Turkey? And abroad?","core"],
+    ["How would you describe your symptoms to a doctor? Give an example.","core"],
+    ["What should you do if a fire starts at home?","core"],
+
+    ["Do you think schools should teach first aid? Why or why not?","stretch"],
+  ]},
+  { id:9, title:"Invitations & Celebrations", tr:"Davet ve Kutlamalar", qs:[
+    ["How would you invite a friend to your birthday in English?","warm"],
+    ["What is the best party you have ever been to? What made it great?","warm"],
+    ["How does your family celebrate religious holidays or New Year?","core"],
+    ["How do you accept an invitation politely? How do you refuse one politely?","core"],
+
+    ["What would be on your “perfect celebration” plan — food, music, guests?","stretch"],
+  ]},
+  { id:10, title:"TV & Social Media", tr:"Televizyon ve Sosyal Medya", qs:[
+    ["How much screen time do you have in a typical day? Is it too much?","warm"],
+    ["What series or channels do you usually watch, and why do you like them?","core"],
+    ["What are the good and bad sides of social media for teenagers?","core"],
+    ["Which app could you not live without, and why?","core"],
+
+    ["Design your dream TV programme for Turkish teenagers. What is it about?","stretch"],
+  ]},
+];
+
+const TAGLABEL = {warm:"Warm‑up", core:"Core", stretch:"Stretch"};
+const LEVELDESC = {
+  warm:"answer in one or two sentences",
+  core:"give a reason and an example",
+  stretch:"speak for a full minute"
+};
+
+const chipsEl = document.getElementById('chips');
+const unitsEl = document.getElementById('units');
+const searchEl = document.getElementById('search');
+const countEl = document.getElementById('count');
+const overlay = document.getElementById('overlay');
+const drawQ = document.getElementById('drawQ');
+const drawUnit = document.getElementById('drawUnit');
+const toast = document.getElementById('toast');
+
+let activeTheme = 0; // 0 = all
+const QUESTIONS = []; // populated below
+
+THEMES.forEach((t,ti)=> t.qs.forEach((q,qi)=>{
+  QUESTIONS.push({unit:t.id, unitTitle:t.title, text:q[0], tag:q[1], idx:ti*100+qi});
+}));
+
+// ---- chips ----
+const chipAll = document.createElement('button');
+chipAll.className = 'chip active';
+chipAll.innerHTML = 'All themes';
+chipAll.onclick = ()=> setTheme(0);
+chipsEl.appendChild(chipAll);
+THEMES.forEach(t=>{
+  const b = document.createElement('button');
+  b.className = 'chip';
+  b.innerHTML = `<span class="n">${String(t.id).padStart(2,'0')}</span> ${t.title}`;
+  b.onclick = ()=> setTheme(t.id);
+  chipsEl.appendChild(b);
+});
+
+function setTheme(id){
+  activeTheme = id;
+  document.querySelectorAll('.chip').forEach((c,i)=> c.classList.toggle('active', (id===0 && i===0) || (id!==0 && THEMES[id-1].id===id && i===id)));
+  render();
+  if(id) document.getElementById('u'+id)?.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// ---- render ----
+function matches(q){
+  const s = searchEl.value.trim().toLowerCase();
+  const themeOK = activeTheme===0 || q.unit===activeTheme;
+  const searchOK = !s || q.text.toLowerCase().includes(s) || q.unitTitle.toLowerCase().includes(s);
+  return themeOK && searchOK;
+}
+
+function render(){
+  // stop running timers on re-render
+  Object.values(timers).forEach(clearInterval); timers = {};
+
+  unitsEl.innerHTML = '';
+  let shown = 0;
+  const filterTargets = activeTheme===0 ? THEMES : THEMES.filter(t=>t.id===activeTheme);
+
+  filterTargets.forEach((t,ui)=>{
+    if(ui>0){ const d=document.createElement('div'); d.className='kilim'; d.setAttribute('aria-hidden','true'); unitsEl.appendChild(d); }
+    const unitQs = t.qs.filter((_,qi)=> matches({unit:t.id, unitTitle:t.title, text:t.qs[qi][0], tag:t.qs[qi][1]}));
+    const unitAll = t.qs.map((q,qi)=>({unit:t.id, unitTitle:t.title, text:q[0], tag:q[1]}));
+    const visible = unitAll.filter(matches);
+    if(!visible.length) { shown += 0; return; }
+    shown += visible.length;
+
+    const sec = document.createElement('section');
+    sec.className = 'unit'; sec.id = 'u'+t.id;
+
+    const head = document.createElement('div');
+    head.className = 'unit-head';
+    head.innerHTML = `
+      <span class="unit-num">${String(t.id).padStart(2,'0')}</span>
+      <h2>${t.title}</h2>
+      <span class="tr">${t.tr}</span>
+      <span class="unit-tag">${visible.length} questions</span>`;
+    sec.appendChild(head);
+
+    const grid = document.createElement('div'); grid.className = 'grid';
+    visible.forEach((q,i)=>{
+      const card = document.createElement('article');
+      card.className = 'qcard';
+      card.style.setProperty('--d', (Math.min(i,12)*0.045)+'s');
+      card.innerHTML = `
+        <p class="q">${q.text}</p>
+        <div class="qfoot">
+          <span class="tag ${q.tag}">${TAGLABEL[q.tag]}</span>
+          <span class="timer" id="t${q.unit}-${i}"></span>
+          <button class="mini" data-act="timer" title="Start a 45-second response timer">⏱ 45s</button>
+          <button class="mini" data-act="copy" title="Copy question">⧉</button>
+        </div>`;
+      grid.appendChild(card);
+      card.querySelector('[data-act="timer"]').onclick = ()=> startTimer(card, q);
+      card.querySelector('[data-act="copy"]').onclick = ()=>{
+        navigator.clipboard.writeText(q.text).then(()=> showToast('Question copied ✓'));
+      };
+    });
+    sec.appendChild(grid);
+    unitsEl.appendChild(sec);
+  });
+
+  countEl.textContent = `${shown} question${shown===1?'':'s'} shown · ${QUESTIONS.length} in the bank`;
+  if(!shown){
+    unitsEl.innerHTML = `<p class="empty">No questions match “${searchEl.value}”. Try another word.</p>`;
+  }
+}
+
+// ---- timer ----
+let timers = {};
+function startTimer(card, q){
+  const tid = `t${q.unit}-${q.idx}`; // stable-ish; falls back to query
+  const el = card.querySelector('.timer') || document.getElementById(tid);
+  if(!el) return;
+  let left = 45;
+  el.textContent = `${left}s`; el.classList.add('going');
+  function tick(){
+    left--;
+    if(left<=0){ el.textContent='Time! ✊'; setTimeout(()=>{el.textContent='';el.classList.remove('going')},1800); clearInterval(timers[q.idx]); return; }
+    el.textContent = `${left}s`;
+  }
+  timers[q.idx] = setInterval(tick,1000);
+}
+
+// ---- search ----
+let searchT;
+searchEl.addEventListener('input', ()=>{ clearTimeout(searchT); searchT = setTimeout(render,180); });
+
+// ---- random draw ----
+function roll(){
+  const pool = QUESTIONS.filter(matches);
+  const pick = pool[Math.floor(Math.random()*pool.length)];
+  if(!pick) return;
+  drawQ.textContent = pick.text;
+  drawUnit.textContent = `THEME ${pick.unit} · ${pick.unitTitle.toUpperCase()} · ${TAGLABEL[pick.tag]} — ${LEVELDESC[pick.tag]}`;
+  overlay.classList.add('open');
+}
+document.getElementById('rollbtn').onclick = roll;
+document.getElementById('rollAgain').onclick = roll;
+document.getElementById('rollClose').onclick = ()=> overlay.classList.remove('open');
+overlay.addEventListener('click', e=>{ if(e.target===overlay) overlay.classList.remove('open'); });
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') overlay.classList.remove('open');
+  if(e.key==='r' && e.altKey) roll();
+});
+
+// ---- toast ----
+let toastT;
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(()=> toast.classList.remove('show'),1600);
+}
+
+render();
+</script>
+</body>
+</html>
